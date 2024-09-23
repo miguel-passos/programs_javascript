@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>identifecador</title>
+    <style>
+        body {
+            font: normal 15pt Arial;
+        }
+        input {
+            margin-top: 1px;
+            font-weight: 100px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Veja aqui sua identificação do pais</h1>
+    <input type="text" name="ind" id="ind"> :
+    <input type="button" value="verificar identidade" onclick="clicar()">
+    <div id="respost"></div>
+    <script>
+        function clicar() {
+            var indent = window.document.getElementById('ind')
+            var resp = window.document.getElementById('respost')
+            var iden = String(indent.value) 
+            if (iden == 'Brasil') {
+                resp.innerHTML = `<p>Voce é <strong>Brazileiro!</strong></p>`
+            } else {
+                resp.innerHTML = `<p>Voce é <strong>estrangeiro!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Programações_HTMLandCSS_XMiguelp"
+		},
+		{
+			"path": "../../Minhas programações_XMiguelp"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Minhas programações_XMiguelp"
+	}
+}

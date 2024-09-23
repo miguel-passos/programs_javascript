@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+            margin-top: 10px;
+        }
+        h1 {
+            height: 100px;
+        }
+        p {
+            font: normal 25px Arial;
+            height: 100px;
+        }
+        h2 {
+            background-color: darkgoldenrod;
+            width: 300px;
+        }
+        div {
+            display: inline-block;
+        }
+        div#avisos {
+            text-orientation: upright;
+            align-items: center;
+        }
+        div#clique {
+            writing-mode: vertical-lr;
+            text-orientation: mixed;
+        }
+        h3 {
+            line-height: 10px;
+            font: normal 10pt Arial;
+        }
+        h1#agr {
+            width: 400px;
+            height: 50px;
+            background-color: rgb(15, 193, 193);
+        }
+        p#dois {
+            margin-top: 1mm;
+            height: 30px;
+            width: 100px;
+            background-color: darkgoldenrod;
+        }
+        p#sla {
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="agr"> </h1>
+    <script>
+        var txtagr = window.document.getElementById('agr')
+        var hora = new Date()
+        var agora = hora.getHours
+        if (agora > 6 && agora < 12) {
+            txtagr.innerHTML = '<strong>Bom dia!</strong>' 
+        } else if (agora < 18 ) {
+            txtagr.innerHTML = '<strong>Boa tarde!</strong>'
+        } else if (agora < 24 ) {
+            txtagr.innerHTML = '<strong>Boa Noite!</strong>'
+        } else {
+            txtagr.innerHTML = '<strong>Boa Madrugada!</strong>'
+        }
+    </script>
+    <h1>Seja bem vindo ao meu site totalmente funny</h1>
+    <p>Aqui falarei de coisas randoms/engraçadas/sla oq</p>
+    <h2>Começando por:</h2>
+    <div id="aviso">
+        <img width="400px" src="https://i.pinimg.com/280x280_RS/61/3e/c4/613ec47a5456fb67300929e4a30a2cbb.jpg" alt="">
+    </div>
+    <div id="clique">
+        <h3>Clica na imagem pra tu ve</h3>
+    </div>
+    <p id="sla">Recomendo q use em situações q vc esteja com duvida se foi avisado(muito util)</p>
+    <p id="dois">Proximo</p>
+</body>
+</html>
